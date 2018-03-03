@@ -11,17 +11,25 @@ import App from './modules/App';
 
 //import registerServiceWorker from './registerServiceWorker';
 
-ReactDOM.render(
-  <Router>
-    <div>
-    <Switch>
-      <Route path="/user" component={App}/>
-      
-      <Route component={App}/>
+ReactDOM.render( <
+  Router >
+  <
+  div >
+  <
+  Switch >
+  <
+  Route path = "/user"
+  component = { App }
+  />
 
-    </Switch>
-    </div>
-  </Router>,
+  <
+  Route component = { App }
+  />
+
+  <
+  /Switch> <
+  /div> <
+  /Router>,
 
 
   document.getElementById('root')
