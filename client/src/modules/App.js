@@ -4,7 +4,7 @@ import { Button } from 'reactstrap';
 import './App.css';
 
 class App extends Component {
-  state = {users: []}
+  state = { users: [] }
 
   componentDidMount() {
     fetch('/api/users')
@@ -13,18 +13,23 @@ class App extends Component {
   }
 
   render() {
-    return (
-      <div className="App">
+    return ( <
+      div className = "App" >
 
-        <h1>Users</h1>
-        {this.state.users.map(user =>
-          <div>
-          <Button>
-            <div key={user.id}>{user.username}</div>
-            </Button>
-          </div>
-        )}
-      </div>
+      <
+      h1 > Users < /h1> {
+        this.state.users.map(user =>
+          <
+          div >
+          <
+          Button >
+          <
+          div key = { user.id } > { user.username } < /div> <
+          /Button> <
+          /div>
+        )
+      } <
+      /div>
     );
   }
 }
